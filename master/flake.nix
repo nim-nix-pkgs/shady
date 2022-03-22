@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shady-master.flake = false;
+  inputs.src-shady-master.ref   = "refs/heads/master";
   inputs.src-shady-master.owner = "treeform";
-  inputs.src-shady-master.ref   = "master";
   inputs.src-shady-master.repo  = "shady";
   inputs.src-shady-master.type  = "github";
   
