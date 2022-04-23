@@ -187,7 +187,7 @@
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "pixie": "pixie",
-        "src-shady-master": "src-shady-master",
+        "src-shady-0_1_0": "src-shady-0_1_0",
         "vmath": "vmath_3"
       }
     },
@@ -276,19 +276,19 @@
         "type": "github"
       }
     },
-    "src-shady-master": {
+    "src-shady-0_1_0": {
       "flake": false,
       "locked": {
-        "lastModified": 1649611694,
-        "narHash": "sha256-mSu4M/w1IVV8gH2J0NfzTnLxqi7ZDWuaWaOrq/HG3us=",
+        "lastModified": 1648833355,
+        "narHash": "sha256-JSE7c4jMKrisiaN4kAC2ptXHROsMRWQKgsboNNDYiYk=",
         "owner": "treeform",
         "repo": "shady",
-        "rev": "5abc397628280aff0937e564d1e2ed819a6de91a",
+        "rev": "df2c4226c1b63d819da761614754323eadd214cd",
         "type": "github"
       },
       "original": {
         "owner": "treeform",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/0.1.0",
         "repo": "shady",
         "type": "github"
       }
