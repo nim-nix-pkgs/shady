@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-shady-master.flake = false;
-  inputs.src-shady-master.ref   = "refs/heads/master";
-  inputs.src-shady-master.owner = "treeform";
-  inputs.src-shady-master.repo  = "shady";
-  inputs.src-shady-master.type  = "github";
+  inputs.src-shady-0_1_1.flake = false;
+  inputs.src-shady-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-shady-0_1_1.owner = "treeform";
+  inputs.src-shady-0_1_1.repo  = "shady";
+  inputs.src-shady-0_1_1.type  = "github";
   
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
@@ -32,13 +32,13 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-shady-master"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-shady-0_1_1"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-shady-master";
+    src  = deps."src-shady-0_1_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );
