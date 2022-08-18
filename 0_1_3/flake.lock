@@ -188,7 +188,7 @@
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "pixie": "pixie",
-        "src-shady-master": "src-shady-master",
+        "src-shady-0_1_3": "src-shady-0_1_3",
         "vmath": "vmath_3"
       }
     },
@@ -277,7 +277,7 @@
         "type": "github"
       }
     },
-    "src-shady-master": {
+    "src-shady-0_1_3": {
       "flake": false,
       "locked": {
         "lastModified": 1660417796,
@@ -289,7 +289,7 @@
       },
       "original": {
         "owner": "treeform",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/0.1.3",
         "repo": "shady",
         "type": "github"
       }
